@@ -7,4 +7,11 @@
     border:1px #20B48640 groove;
     border-radius: 50%;
     padding: 60px;
+    position: relative !important;
+}
+#Hero .fa-circle{
+    color: #20B486;
+    position: absolute !important;
+    top: 50px !important;
+    left: 70px !important;
 }
