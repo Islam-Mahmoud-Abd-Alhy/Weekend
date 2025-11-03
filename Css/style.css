@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 .circle{
     border:1px #20B48640 groove;
@@ -161,4 +162,27 @@ circle {
     position: absolute;
     bottom:150px;
     right: 200px;
+}
+/*Brands*/
+#Brands{
+    margin-top: 80px;
+}
+.p-brands{
+    color:#20b485
+}
+/*servises section*/
+.p-servises{
+    color:#20b485
+}
+.div-servises{
+    max-width: 600px;
+    text-align: center;
+}
+.card1-servises{
+    max-width: 400px;
+    transition: all 0.3s ease-in-out;
+}
+.card1-servises:hover{
+    background-color: #20b485 !important;
+    color:#fff !important;
 }
