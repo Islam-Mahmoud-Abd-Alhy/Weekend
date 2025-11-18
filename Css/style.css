@@ -397,3 +397,62 @@ padding: 150px;
     margin-right: 90px !important;
 }
 /*Features*/
+#Features{
+  margin-top: 150px;
+}
+.bg-img2{
+  background-color:#F2F2F2 ;
+  padding: 180px;
+  height: 100px;
+}
+.img-section2{
+  width:350px;
+  top: 40px;
+  height: 350px ;
+}
+.section2-Features{
+  margin-left: 150px;
+}
+
+/*Benfits*/
+.p-Benfits{
+  color:#20b486;
+}
+.item{
+  width: 350px;
+  height: 200px;
+  background-color: #fffefe;
+  border-radius: 20px;
+  position: relative;
+  border:1px #495057 groove;
+  transition: all 0.3s ease-in-out;
+  filter:blur(20px);
+}
+.half-circle{
+  width: 50px;
+  height: 25px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: #22b28748;
+  transform: rotate(320deg);
+  position:absolute;
+  transition: all 0.5s ease-in-out;
+  top:15px;
+}
+.text-item{
+  color:#20b486;
+}
+.item:hover{
+background-color: #F7FDF9;
+  filter:blur(0px);
+  border: none;
+  box-shadow: 0px 0px 10px #000000;
+}
+.item:hover .half-circle{
+  transform: rotate(50deg);
+}
+.sapn-item{
+  color:#20b486;
+}
