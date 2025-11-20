@@ -1,11 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeekEnd Intro</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .intro {
+      text-align: center;
+      position: relative;
+      z-index: 3;
+    }
+
+    h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #fff;
+      display: inline-block;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 1s ease;
+    }
+
+    h1 span {
+      color: #00e676;
+      text-shadow: 0 0 15px #00e676;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #d6ffd9;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 1s ease;
+    }
+
+    .visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .pulse {
+      animation: pulse 1.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes pulse {
+      from { text-shadow: 0 0 10px #00e676; }
+      to { text-shadow: 0 0 30px #00ff91, 0 0 60px #00ff91; }
+    }
+
+    .lines {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    .line {
+      position: absolute;
+      width: 2px;
+      height: 100%;
+      background: rgba(0, 255, 128, 0.25);
+      animation: move 4s ease-in-out infinite alternate;
+      filter: blur(0.3px);
+    }
+
+    .line:nth-child(1) { left: 10%; animation-delay: 0s; }
+    .line:nth-child(2) { left: 30%; animation-delay: 0.5s; }
+    .line:nth-child(3) { left: 50%; animation-delay: 1s; }
+    .line:nth-child(4) { left: 70%; animation-delay: 1.5s; }
+    .line:nth-child(5) { left: 90%; animation-delay: 2s; }
+
+    @keyframes move {
+      0% { transform: translateY(-100%); opacity: 0.3; }
+      50% { transform: translateY(0%); opacity: 1; }
+      100% { transform: translateY(100%); opacity: 0; }
+    }
+
+    .cover {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 0%;
+      background: linear-gradient(to top,#FFFFFFFF , #00ff99);
+      z-index: 4;
+      animation: slideUp 1.2s ease-in-out forwards;
+      animation-delay: 4.8s;
+    }
+
+    @keyframes slideUp {
+      from { height: 0%; }
+      to { height: 100%; }
+    }
+
+    .fade-out {
+      animation: fadeOut 1s forwards;
+    }
+
+    @keyframes fadeOut {
+      to { opacity: 0; transform: scale(1.05); }
+    }
+  </style>
 </head>
 <body>
-    
+  <div class="lines">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+
+  <div class="intro" id="intro">
+    <h1 id="logo">Week<span>End</span></h1>
+    <p id="subtitle">Learn Anything Here</p>
+  </div>
+
+  <div class="cover" id="cover"></div>
+
+  <script>
+    const logo = document.getElementById("logo");
+    const subtitle = document.getElementById("subtitle");
+    const intro = document.getElementById("intro");
+    const cover = document.getElementById("cover");
+
+    window.addEventListener("load", () => {
+      setTimeout(() => logo.classList.add("visible"), 400);
+      setTimeout(() => logo.classList.add("pulse"), 1200);
+      setTimeout(() => subtitle.classList.add("visible"), 1800);
+
+      setTimeout(() => {
+        intro.classList.add("fade-out");
+      }, 4800);
+
+      setTimeout(() => {
+        window.location.href = "Main.html"; 
+      }, 6000);
+    });
+  </script>
 </body>
 </html>
