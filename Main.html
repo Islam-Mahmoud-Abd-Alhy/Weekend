@@ -14,61 +14,66 @@
 
 <body>
     <nav class="navbar navbar-expand-lg">
-      <div class="container">
-          <div class="logo-search">
-            <span class="navbar-brand"><img src="/Images/Logo.png" class="logo"></span>
-            <form class="d-flex align-items-center" role="search">
-              <div class="position-relative">
-                <div class="position-absolute top-50 start-0 translate-middle-y">
-                  <i class="fa-solid fa-magnifying-glass search-icon ms-2 me-4"></i>
-                </div>
-                <input class="form-control placeholder-text ps-4 me-5" type="search" placeholder="Want to learn?" aria-label="Search"/>
-                <div class="dropdown position-absolute top-50 end-0 translate-middle-y pe-2">
-                  <div class="position-relative me-2">
-                    <span class="button-text ms-auto pe-2 me-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explore</a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                    </ul>
-                  </div>
-                  <div class="position-absolute top-50 end-0 translate-middle-y">
-                    <i class="fa-solid fa-angle-down fa-sm angle-down-icon me-2"></i>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon ms-1"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-4 mb-2 mb-lg-0 gap-3">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Courses</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">FAQ’s</a>
-            </li>
-            <div class="d-flex ms-5 gap-2">
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Sign in</a>
-              </li>
-              <button class="btn">Create free account</button>
+        <div class="d-flex flex-row justify-content-around container-fluid">
+            <div class="logo-search d-flex flex-row justify-content-center">
+                <span class="navbar-brand">
+                    <img src="Media/images/Logo.png" class="logo w-75"></span>
+                <form class="d-flex align-items-center" role="search">
+                    <div class="position-relative">
+                        <div class="position-absolute top-50 start-0 translate-middle-y">
+                            <i class="fa-solid fa-magnifying-glass search-icon ms-2 me-4"></i>
+                        </div>
+                        <input class="form-control placeholder-text ps-4 me-5" type="search"
+                            placeholder=" Want to learn?" aria-label="Search" />
+                        <div class="dropdown position-absolute top-50 end-0 translate-middle-y pe-2">
+                            <div class="position-relative me-2">
+                                <span class="button-text ms-auto pe-2 me-2" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Explore</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    </ul>
+                            </div>
+                            <div class="position-absolute top-50 end-0 translate-middle-y">
+                                <i class="fa-solid fa-angle-down fa-sm angle-down-icon me-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
-          </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon ms-1"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-4 mb-2 mb-lg-0 gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./Main.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Html/About-Us.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Programs">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Html/Contact-us.html">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQ’s</a>
+                    </li>
+                    <div class="d-flex ms-5 gap-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sign in</a>
+                        </li>
+                        <button class="btn">Create free account</button>
+                    </div>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
-    
+
 
     <!-- Hero Section -->
     <section id="Hero" class="Hero container-fluid d-flex flex-column justify-content-around mt-3">
@@ -93,7 +98,7 @@
                         Learn UI-UX Design skills with weekend UX. The latest online learning system and material that
                         help your knowledge growing.
                     </p>
-                    <div class="d-flex flexprow gap-3">
+                    <div class="d-flex flex-row gap-3">
                         <button class="p-3 button-content-Hero rounded-3 border-0 text-white fw-bold">Get
                             Started</button>
                         <button class="p-3 button-content-Hero rounded-3 border-0 text-white fw-bold">Get free
@@ -157,71 +162,8 @@
         </div>
     </section>
 
-    <footer class="bd-footer position-relative pb-4">
-      <div class="container py-4 py-md-5 px-4 px-md-3">
-        <div class="row mt-5">
-          <div class="col-lg-3 mb-3">
-            <ul class="list-unstyled small">
-              <span class="navbar-brand fs-2 fw-bolder text-black"><img src="/Images/Logo.png" class="logo"></span>
-              <p class="mt-4">Top learning experiences that create more talent in the world.</p>
-            </ul>
-          </div>
-
-          <div class="col-6 col-lg-2 offset-lg-1 mb-3">
-            <h6 class="title-footer">Product</h6>
-            <ul class="list-unstyled">
-              <li><a href="#">Overview</a></li>
-              <li><a href="#">Features</a></li>
-              <li><a href="#">Solutions</a></li>
-              <li><a href="#">Tutorials</a></li>
-              <li><a href="#">Pricing</a></li>
-            </ul>
-          </div>
-          
-          <div class="col-6 col-lg-2 mb-3">
-            <h6 class="title-footer">Company</h6>
-            <ul class="list-unstyled">
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Careers</a></li>
-              <li class="press d-flex gap-3"><a href="#">Press</a><p class="new">New</p></li>
-              <li><a href="#">News</a></li>
-            </ul>
-          </div>
-
-          <div class="col-6 col-lg-2 mb-3">
-            <h6 class="title-footer">Social</h6>
-            <ul class="list-unstyled">
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">LinkedIn</a></li>
-              <li><a href="#">GitHub</a></li>
-              <li><a href="#">Dribbble</a></li>
-            </ul>
-          </div>
-
-          <div class="col-6 col-lg-2 mb-3">
-            <h6 class="title-footer">Legal</h6>
-            <ul class="list-unstyled">
-              <li><a href="#">Terms</a></li>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Cookies</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="container d-flex">
-        <p class="title-footer">© 2022 Ed-Circle. All rights reserved.</p>
-        <div class="d-flex align-items-center gap-4 ms-auto">
-            <a href="#"><i class="fa-brands fa-twitter fa-lg"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin fa-lg"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a>
-            <a href="#"><i class="fa-brands fa-github fa-lg"></i></a>
-            <a href="#"><i class="fa-brands fa-dribbble fa-lg"></i></a>
-        </div>
-      </div>
-    </footer>
     
+
     <!-- Brands Section -->
     <section id="Brands" class="brands-section container-fluid  pt-5">
         <div class="row">
@@ -392,128 +334,206 @@
             </div>
         </div>
         <div class="d-flex flex-cow gap-3">
-                <div class="first rounded-4">
-                </div>
-                <div class="rounded-circle second">
-                </div>
-                <div class="rounded-circle second">
-                </div>
+            <div class="first rounded-4">
             </div>
-            <button class="button-programs p-2 text-black fw-bold border-1 border-dark-subtle rounded-3 mt-5">Explore All Programs</button>
+            <div class="rounded-circle second">
+            </div>
+            <div class="rounded-circle second">
+            </div>
+        </div>
+        <button class="button-programs p-2 text-black fw-bold border-1 border-dark-subtle rounded-3 mt-5">Explore All
+            Programs</button>
     </section>
-<!--Tutors section-->
-<section id="Tutors" class="d-flex flex-column justify-content-center align-items-center mt-5 ps-5 pe-5 Tutors mb-5">
-<p class="p-Tutors text-center ms-5 fw-bold">Tutors</p>
-<p class="text-black fw-bold fs-3 ms-5">Meet the Heroes</p>
-<p class="text-black-50 text-center w-50 ms-5">On Weekend UX, instructors from all over the world instruct millions of students. We offer the knowledge and abilities.</p>
-<div class="d-flex flex-row justify-content-center align-items-center gap-3 mt-3">
-<div class="card1-Tutors d-flex flex-column justify-content-center align-items-center gap-2 w-25">
-<img src="./Media/images/card1-Tutors-img.png" alt="img1" class="rounded-circle w-25 mt-3">
-<p class="fw-bold">Theresa Webb</p>
-<p class="p-card1-Tutors w-75 text-center">Application Support Analyst Lead</p>
-<p class="text-black-50 w-75 text-center">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</p>
-<div class="icons-card1-Tutors d-flex flex-row justify-content-center gap-2">
-    <i class="fa-brands fa-twitter fs-3 text-black-50"></i>
-    <i class="fa-brands fa-linkedin fs-3 text-black-50"></i>
-</div>
-</div>
-<div class="card2-Tutors d-flex flex-column justify-content-center align-items-center gap-2 w-25">
-    <img src="./Media/images/card2-Tutors-img.png" alt="img1" class="rounded-circle w-25 mt-3">
-<p class="fw-bold">Courtney Henry</p>
-<p class="p-card1-Tutors text-center">Director, Undergraduate Analytics and Planning</p>
-<p class="text-black-50 text-center w-75">Lead engineering teams at Figma, Pitch, and Protocol Labs..</p>
-<div class="icons-card1-Tutors d-flex flex-row justify-content-center gap-2">
-    <i class="fa-brands fa-twitter fs-3 text-black-50"></i>
-    <i class="fa-brands fa-linkedin fs-3 text-black-50"></i>
-</div>
-</div>
-<div class="card3-Tutors d-flex flex-column justify-content-center align-items-center gap-2 w-25">
-    <img src="./Media/images/card3-Tutors-img.png" alt="img1" class="rounded-circle w-25 mt-3">
-<p class="fw-bold">Albert Flores</p>
-<p class="p-card1-Tutors w-50 text-center">Career Educator</p>
-<p class="text-black-50 w-50 text-center">Former PM for Linear, Lambda School, and On Deck.
-</p>
-<div class="icons-card1-Tutors d-flex flex-row justify-content-center gap-2">
-    <i class="fa-brands fa-twitter fs-3 text-black-50"></i>
-    <i class="fa-brands fa-linkedin fs-3 text-black-50"></i>
-</div>
-</div>
-<div class="card4-Tutors d-flex flex-column justify-content-center align-items-center gap-2 w-25 ">
-    <img src="./Media/images/card4-Tutors-img.png" alt="img1" class="rounded-circle w-25 mt-3">
-<p class="fw-bold">Marvin McKinney</p>
-<p class="p-card1-Tutors  text-center">Co-op & Internships Program & Operations Manager</p>
-<p class="text-black-50 w-75 text-center">Former frontend dev for Linear, Coinbase, and Postscript.</p>
-<div class="icons-card1-Tutors d-flex flex-row justify-content-center gap-2">
-    <i class="fa-brands fa-twitter fs-3 text-black-50"></i>
-    <i class="fa-brands fa-linkedin fs-3 text-black-50"></i>
-</div>
-</div>
-</div>
-</section>
-
-<!--commints section-->
-<section id="commints"  class="commints d-flex flex-column justify-content-center align-items-center gap-4">
-    <img src="./Media/images/logo.png" alt="img" class="logo-commints mt-5">
-    <h2 class="h2-commints text-black text-center w-75 fw-bold">Courses was fantastic! It is Master platform for those looking to start a new career, or need a refresher.</h2>
-    <div class="d-flex flex-column justify-content-center align-items-center gap-3">
-    <img src="./Media/images/logo-commints.png" alt="img" class="img-commints rounded-circle">
-    <div class="d-flex flex-column justify-content-center align-items-center">
-    <p class="p-commints text-black fw-bold">Jacob Jones</p>
-    <p class="p2-commints fw-bold text-black-50">Student, National University</p>
-    </div>
-    </div>
-</section>
-<div class="d-flex flex-cow gap-3 justify-content-center align-items-center mt-3">
-                <div class="first rounded-4">
-                </div>
-                <div class="rounded-circle second">
-                </div>
-                <div class="rounded-circle second">
+    <!--Tutors section-->
+    <section id="Tutors"
+        class="d-flex flex-column justify-content-center align-items-center mt-5 ps-5 pe-5 Tutors mb-5">
+        <p class="p-Tutors text-center ms-5 fw-bold">Tutors</p>
+        <p class="text-black fw-bold fs-3 ms-5">Meet the Heroes</p>
+        <p class="text-black-50 text-center w-50 ms-5">On Weekend UX, instructors from all over the world instruct
+            millions of students. We offer the knowledge and abilities.</p>
+        <div class="d-flex flex-row justify-content-center align-items-center gap-3 mt-3">
+            <div class="card1-Tutors d-flex flex-column justify-content-center align-items-center gap-2 w-25">
+                <img src="./Media/images/card1-Tutors-img.png" alt="img1" class="rounded-circle w-25 mt-3">
+                <p class="fw-bold">Theresa Webb</p>
+                <p class="p-card1-Tutors w-75 text-center">Application Support Analyst Lead</p>
+                <p class="text-black-50 w-75 text-center">Former co-founder of Opendoor. Early staff at Spotify and
+                    Clearbit.</p>
+                <div class="icons-card1-Tutors d-flex flex-row justify-content-center gap-2">
+                    <i class="fa-brands fa-twitter fs-3 text-black-50"></i>
+                    <i class="fa-brands fa-linkedin fs-3 text-black-50"></i>
                 </div>
             </div>
-<!--recent blogs section-->
-<section id="recent-blogs" class="p-5 bg-white">
-<p class="fw-bold text-black fs-4">Our recent blogs</p>
-<div class="row d-flex flex-row">
-    <div class="col-6 d-flex flex-column gap-4">
-        <div class="d-flex flex-row gap-4">
-        <img src="./Media/images/img-recent-blogs.jpg" alt="img" class="w-50">
-        <div class="d-flex flex-column justify-content-start">
-            <p class="date-recent-blogs fw-bold">November 16, 2014</p>
-            <p class="fw-bold text-black">Three Pillars of User Delight</p>
-            <p class="fw-bold text-black-50">Delight can be experienced viscerally, behaviourally, and reflectively. A great design is ...</p>
-            <div class="d-flex flex-row justify-content-center gap-2 second-cards">
-            <p class="p-card1 rounded-5 p-2 text-center fw-bold">Research</p>
-            <p class="p2-card1 rounded-5 p-2 text-center fw-bold">UI UX</p>
+            <div class="card2-Tutors d-flex flex-column justify-content-center align-items-center gap-2 w-25">
+                <img src="./Media/images/card2-Tutors-img.png" alt="img1" class="rounded-circle w-25 mt-3">
+                <p class="fw-bold">Courtney Henry</p>
+                <p class="p-card1-Tutors text-center">Director, Undergraduate Analytics and Planning</p>
+                <p class="text-black-50 text-center w-75">Lead engineering teams at Figma, Pitch, and Protocol Labs..
+                </p>
+                <div class="icons-card1-Tutors d-flex flex-row justify-content-center gap-2">
+                    <i class="fa-brands fa-twitter fs-3 text-black-50"></i>
+                    <i class="fa-brands fa-linkedin fs-3 text-black-50"></i>
+                </div>
+            </div>
+            <div class="card3-Tutors d-flex flex-column justify-content-center align-items-center gap-2 w-25">
+                <img src="./Media/images/card3-Tutors-img.png" alt="img1" class="rounded-circle w-25 mt-3">
+                <p class="fw-bold">Albert Flores</p>
+                <p class="p-card1-Tutors w-50 text-center">Career Educator</p>
+                <p class="text-black-50 w-50 text-center">Former PM for Linear, Lambda School, and On Deck.
+                </p>
+                <div class="icons-card1-Tutors d-flex flex-row justify-content-center gap-2">
+                    <i class="fa-brands fa-twitter fs-3 text-black-50"></i>
+                    <i class="fa-brands fa-linkedin fs-3 text-black-50"></i>
+                </div>
+            </div>
+            <div class="card4-Tutors d-flex flex-column justify-content-center align-items-center gap-2 w-25 ">
+                <img src="./Media/images/card4-Tutors-img.png" alt="img1" class="rounded-circle w-25 mt-3">
+                <p class="fw-bold">Marvin McKinney</p>
+                <p class="p-card1-Tutors  text-center">Co-op & Internships Program & Operations Manager</p>
+                <p class="text-black-50 w-75 text-center">Former frontend dev for Linear, Coinbase, and Postscript.</p>
+                <div class="icons-card1-Tutors d-flex flex-row justify-content-center gap-2">
+                    <i class="fa-brands fa-twitter fs-3 text-black-50"></i>
+                    <i class="fa-brands fa-linkedin fs-3 text-black-50"></i>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <!--commints section-->
+    <section id="commints" class="commints d-flex flex-column justify-content-center align-items-center gap-4">
+        <img src="./Media/images/logo.png" alt="img" class="logo-commints mt-5">
+        <h2 class="h2-commints text-black text-center w-75 fw-bold">Courses was fantastic! It is Master platform for
+            those looking to start a new career, or need a refresher.</h2>
+        <div class="d-flex flex-column justify-content-center align-items-center gap-3">
+            <img src="./Media/images/logo-commints.png" alt="img" class="img-commints rounded-circle">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <p class="p-commints text-black fw-bold">Jacob Jones</p>
+                <p class="p2-commints fw-bold text-black-50">Student, National University</p>
+            </div>
         </div>
+    </section>
+    <div class="d-flex flex-cow gap-3 justify-content-center align-items-center mt-3">
+        <div class="first rounded-4">
         </div>
-        <div class="d-flex flex-row gap-4">
-            <img src="./Media/images/img2-recent-blogs.jpg" alt="img" class="w-50">
-        <div class="d-flex flex-column justify-content-start">
-            <p class="date-recent-blogs fw-bold">September 24, 2017</p>
-            <p class="fw-bold text-black">UX Mapping Methods</p>
-            <p class="fw-bold text-black-50">Visual-design principles can be applied consistently throughout the process of creating a polished UX map...</p>
-            <div class="d-flex flex-row justify-content-center gap-2 second-cards">
-            <p class="p-card1 rounded-5 p-2 text-center fw-bold">Research</p>
-            <p class="p3-card1 rounded-5 p-2 text-center fw-bold">UI Design</p>
+        <div class="rounded-circle second">
         </div>
-        </div>
+        <div class="rounded-circle second">
         </div>
     </div>
-    <div class="col-6 d-flex flex-column justify-content-center">
-        <img src="./Media/images/img3-recent-blogs.jpg" alt="img" class="img-card3-blogs">
-        <p class="date-recent-blogs fw-bold mt-2">March 13, 2014</p>
-        <p class="fw-bold text-black">Agile Development Projects and Usability</p>
-            <p class="fw-bold text-black-50">Agile methods aim to overcome usability barriers in traditional development, but post new threats to user experience quality. </p>
-            <div class="d-flex flex-row justify-content-center gap-2 second-cards">
-            <p class="p5-card1 rounded-5 p-2 text-center fw-bold">Programming</p>
-            <p class="p4-card1 rounded-5 p-2 text-center fw-bold">Research</p>
-            <p class="p-card1 rounded-5 p-2 text-center fw-bold w-25">Developments</p>
+    <!--recent blogs section-->
+    <section id="recent-blogs" class="p-5 bg-white">
+        <p class="fw-bold text-black fs-4">Our recent blogs</p>
+        <div class="row d-flex flex-row">
+            <div class="col-6 d-flex flex-column gap-4">
+                <div class="d-flex flex-row gap-4">
+                    <img src="./Media/images/img-recent-blogs.jpg" alt="img" class="w-50">
+                    <div class="d-flex flex-column justify-content-start">
+                        <p class="date-recent-blogs fw-bold">November 16, 2014</p>
+                        <p class="fw-bold text-black">Three Pillars of User Delight</p>
+                        <p class="fw-bold text-black-50">Delight can be experienced viscerally, behaviourally, and
+                            reflectively. A great design is ...</p>
+                        <div class="d-flex flex-row justify-content-center gap-2 second-cards">
+                            <p class="p-card1 rounded-5 p-2 text-center fw-bold">Research</p>
+                            <p class="p2-card1 rounded-5 p-2 text-center fw-bold">UI UX</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-row gap-4">
+                    <img src="./Media/images/img2-recent-blogs.jpg" alt="img" class="w-50">
+                    <div class="d-flex flex-column justify-content-start">
+                        <p class="date-recent-blogs fw-bold">September 24, 2017</p>
+                        <p class="fw-bold text-black">UX Mapping Methods</p>
+                        <p class="fw-bold text-black-50">Visual-design principles can be applied consistently throughout
+                            the process of creating a polished UX map...</p>
+                        <div class="d-flex flex-row justify-content-center gap-2 second-cards">
+                            <p class="p-card1 rounded-5 p-2 text-center fw-bold">Research</p>
+                            <p class="p3-card1 rounded-5 p-2 text-center fw-bold">UI Design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-center">
+                <img src="./Media/images/img3-recent-blogs.jpg" alt="img" class="img-card3-blogs">
+                <p class="date-recent-blogs fw-bold mt-2">March 13, 2014</p>
+                <p class="fw-bold text-black">Agile Development Projects and Usability</p>
+                <p class="fw-bold text-black-50">Agile methods aim to overcome usability barriers in traditional
+                    development, but post new threats to user experience quality. </p>
+                <div class="d-flex flex-row justify-content-center gap-2 second-cards">
+                    <p class="p5-card1 rounded-5 p-2 text-center fw-bold">Programming</p>
+                    <p class="p4-card1 rounded-5 p-2 text-center fw-bold">Research</p>
+                    <p class="p-card1 rounded-5 p-2 text-center fw-bold w-25">Developments</p>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-</section>
+    </section>
+<!--Footer Section-->
+
+    <footer class="bd-footer position-relative pb-4">
+        <div class="container py-4 py-md-5 px-4 px-md-3">
+            <div class="row mt-5">
+                <div class="col-lg-3 mb-3">
+                    <ul class="list-unstyled small">
+                        <span class="navbar-brand fs-2 fw-bolder text-black"><img src="Media/images/logo.png"
+                                class="logo"></span>
+                        <p class="mt-4">Top learning experiences that create more talent in the world.</p>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                    <h6 class="title-footer">Product</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Solutions</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2 mb-3">
+                    <h6 class="title-footer">Company</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li class="press d-flex gap-3"><a href="#">Press</a>
+                            <p class="new">New</p>
+                        </li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2 mb-3">
+                    <h6 class="title-footer">Social</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">Dribbble</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2 mb-3">
+                    <h6 class="title-footer">Legal</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container d-flex">
+            <p class="title-footer">© 2022 Ed-Circle. All rights reserved.</p>
+            <div class="d-flex align-items-center gap-4 ms-auto">
+                <a href="#"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                <a href="#"><i class="fa-brands fa-github fa-lg"></i></a>
+                <a href="#"><i class="fa-brands fa-dribbble fa-lg"></i></a>
+            </div>
+        </div>
+    </footer>
     <script src="Js/bootstrap.bundle.min.js"></script>
     <script src="Js/all.min.js"></script>
     <script src="Js/app.js"></script>
